@@ -1,0 +1,13 @@
+pymupdf>=1.26
+presidio-analyzer>=2.2
+spacy>=3.7
+pikepdf>=9
+reportlab>=4
+pillow>=10.1
+# Needs Python 3.10 or newer (3.12 recommended).
+# After installing, fetch the language model once:
+#   python -m spacy download en_core_web_lg
+# System tools used by verify.py: poppler (pdftotext, pdftoppm) and tesseract
+#   macOS: brew install poppler tesseract
+# The results in README.md were observed on PyMuPDF 2.0, Presidio 2.2.366, spaCy 3.8.18.
+# Newer or older versions may behave differently, so re-run to confirm on your versions.

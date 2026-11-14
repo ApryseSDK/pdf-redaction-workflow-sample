@@ -1,0 +1,23 @@
+# dependencies and environments
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+
+# secrets and local config (never commit keys)
+.env
+.env.local
+.apryse_keys
+
+# generated files
+output/*
+!output/.gitkeep
+work/*
+!work/.gitkeep
+received/
+webviewer-app/dist/
+webviewer-app/public/lib/
+webviewer-app/public/sample_claim.pdf
+
+# OS
+.DS_Store

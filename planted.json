@@ -1,0 +1,15 @@
+{
+  "_note": "Every value here is fictional. SSNs in the 987-65-432x range are reserved for advertising and never issued; the card number is a standard payment-processor test number.",
+  "items": [
+    {"id": "ssn_text",   "label": "SSN in text layer",          "value": "987-65-4321",                "where": "page 1 text",       "shortfall": "a"},
+    {"id": "card_text",  "label": "Card number in text layer",  "value": "4111 1111 1111 1111",        "where": "page 1 text",       "shortfall": "a"},
+    {"id": "email_text", "label": "Email in text layer",        "value": "jordan.example@example.com", "where": "page 1 text",       "shortfall": "a"},
+    {"id": "name_text",  "label": "Name in prose",              "value": "Jordan A. Example",          "where": "page 1 text",       "shortfall": "a"},
+    {"id": "addr_text",  "label": "Street address in prose",    "value": "100 Example Street",         "where": "page 1 text",       "shortfall": "a"},
+    {"id": "ssn_scan",   "label": "SSN inside a scanned image", "value": "987-65-4322",                "where": "page 2 image only", "shortfall": "scan"},
+    {"id": "meta_title", "label": "Name in document title",     "value": "Claim 2026-0042 Jordan Example", "where": "Info dictionary", "shortfall": "c"},
+    {"id": "meta_author","label": "Name in author field",       "value": "Jordan A. Example",          "where": "Info dictionary",   "shortfall": "c"},
+    {"id": "annot_note", "label": "PII in a sticky-note comment","value": "555-0142",                  "where": "annotation",        "shortfall": "c"},
+    {"id": "attachment", "label": "PII in an embedded file",    "value": "987-65-4323",                "where": "attachment",        "shortfall": "c"}
+  ]
+}

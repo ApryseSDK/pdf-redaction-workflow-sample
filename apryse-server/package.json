@@ -1,0 +1,14 @@
+{
+  "name": "pdf-redaction-workflow-sample",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Server SDK redaction demo: detect, review, apply, sanitize, audit",
+  "scripts": {
+    "detect": "node apryse_redact.js detect ../originals/sample_claim.pdf ../work/marks.json",
+    "apply": "node apryse_redact.js apply ../originals/sample_claim.pdf ../work/marks.json ../output/apryse.pdf --sanitize --reviewer \"Demo reviewer\"",
+    "sanitize": "node apryse_redact.js sanitize ../output/browser_redacted.pdf ../output/browser_plus_server.pdf --reviewer \"Demo reviewer\""
+  },
+  "dependencies": {
+    "@pdftron/pdfnet-node": "^12.2.1"
+  }
+}
